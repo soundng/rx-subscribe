@@ -19,7 +19,7 @@ As the result templates with AsyncPipe cannot be type-checked enough.
 ## Features
 
 - ✅ null-less async data-binding
-- ✅ Full-Typed Template (with `strictTemplate` flag)
+- ✅ Full-Typed Template (with `strictTemplates` flag)
 - ✅ OnPush-Friendly
 
 ## Table of Contents
