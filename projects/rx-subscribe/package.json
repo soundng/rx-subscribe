@@ -1,0 +1,25 @@
+{
+  "name": "@soundng/rx-subscribe",
+  "version": "1.0.0",
+  "peerDependencies": {
+    "@angular/common": ">=8.0.0",
+    "@angular/core": ">=8.0.0"
+  },
+  "keywords": [
+    "angular",
+    "angular 2",
+    "rx-subscribe"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/soundng/rx-subscribe/issue"
+  },
+  "homepage": "https://github.com/soundng/rx-subscribe#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/soundng/rx-subscribe"
+  }
+}
