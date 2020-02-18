@@ -1,1 +1,6 @@
-<lib-rx-subscribe></lib-rx-subscribe>
+<button (click)="resetSource()">Reset Source</button>
+
+<div *rxSubscribe="source$; let state">
+  <!-- state: { count: number } -->
+  {{ state.count }}
+</div>

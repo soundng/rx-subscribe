@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
-import { RxSubscribeComponent } from './rx-subscribe.component';
+import { RxSubscribeDirective } from './rx-subscribe.directive';
 
 @NgModule({
-  declarations: [RxSubscribeComponent],
+  declarations: [RxSubscribeDirective],
   imports: [],
-  exports: [RxSubscribeComponent]
+  exports: [RxSubscribeDirective]
 })
 export class RxSubscribeModule {}
