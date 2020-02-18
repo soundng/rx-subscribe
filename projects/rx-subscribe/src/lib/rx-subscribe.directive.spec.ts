@@ -32,11 +32,11 @@ describe('RxSubscribeDirective', () => {
     expect(spectator.element.textContent).toBe('');
   });
 
-  it('should not display nothing before the first value', () => {
+  it('should not display anything before the first value', () => {
     expect(spectator.element.textContent).toBe('');
   });
 
-  it('should display count after dispatching', () => {
+  it('should update view after emitting value', () => {
     source$.next({ count: 0 });
     spectator.fixture.detectChanges();
     expect(spectator.element.textContent).toBe('0');

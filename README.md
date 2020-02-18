@@ -1,6 +1,6 @@
 # rx-subscribe
 
-AsyncPipe Alternative for handling Observable data safely.
+AsyncPipe alternative for handling Observable data safely.
 
 <br />
 
@@ -10,22 +10,22 @@ AsyncPipe Alternative for handling Observable data safely.
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors-)
 
-> The Library Slogan
+Angular's AsyncPipe (`{{ source$ | async }}`) has _Initial Null Problem_.
+**Every AsyncPipe returns `null` as the initial value once** because `transform()` method must return a value synchronously.
+As the result templates with AsyncPipe cannot be type-checked enough.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid assumenda atque blanditiis cum delectus eligendi ipsam iste iure, maxime modi molestiae nihil obcaecati odit officiis pariatur quibusdam suscipit temporibus unde.
-Accusantium aliquid corporis cupiditate dolores eum exercitationem illo iure laborum minus nihil numquam odit officiis possimus quas quasi quos similique, temporibus veritatis? Exercitationem, iure magni nulla quo sapiente soluta. Esse?
+`*rxSubscribe` directive solves that all.
 
 ## Features
 
-- ✅ One
-- ✅ Two
-- ✅ Three
+- ✅ null-less async data-binding
+- ✅ Full-Typed Template (with `strictTemplate` flag)
+- ✅ OnPush-Friendly
 
 ## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [FAQ](#faq)
 
 ## Installation
 
@@ -33,23 +33,39 @@ Accusantium aliquid corporis cupiditate dolores eum exercitationem illo iure lab
 
 `npm install @soundng/rx-subscribe --save`
 
-### Yarn
-
-`yarn add @soundng/rx-subscribe`
-
 ## Usage
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid assumenda atque blanditiis cum delectus eligendi ipsam iste iure, maxime modi molestiae nihil obcaecati odit officiis pariatur quibusdam suscipit temporibus unde.
+### Import RxSubscribeModule
 
 ```ts
-function helloWorld() {}
+import { RxSubscribeModule } from '@soundng/rx-subscribe';
+
+@NgModule({
+  declarations: [AppComponent],
+  imports: [BrowserModule, RxSubscribeModule],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule {}
 ```
 
-## FAQ
+### Use `*rxSubscribe` directive in templates
 
-## How to ...
+```html
+<div *rxSubscribe="source$; let state">
+  {{ state.count }}
+</div>
+```
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid assumenda atque blanditiis cum delectus eligendi ips
+`*rxSubscribe` directive will subscribe `source$` and render its template with the snapshot value named `state`. It won't render any view until the first value has been emitted.
+And automatically it unsubscribes the `source$` on destroy.
+That template can be regarded as the following code:
+
+```ts
+source$.subscribe(state => {
+  console.log(state.count);
+});
+```
 
 ## Contributors ✨
 

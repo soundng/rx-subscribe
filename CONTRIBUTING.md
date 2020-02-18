@@ -26,7 +26,7 @@ npm start
 ## Building
 
 ```bash
-npm run build
+npm run build:lib
 ```
 
 ## <a name="rules"></a> Coding Rules
