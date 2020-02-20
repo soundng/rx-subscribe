@@ -1,6 +1,6 @@
 {
   "projectName": "rx-subscribe",
-  "projectOwner": "",
+  "projectOwner": "@soundng",
   "repoType": "github",
   "repoHost": "https://github.com",
   "files": [
@@ -9,6 +9,16 @@
   "imageSize": 100,
   "commit": true,
   "commitConvention": "angular",
-  "contributors": [],
+  "contributors": [
+    {
+      "login": "lacolaco",
+      "name": "Suguru Inatomi",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/1529180?v=4",
+      "profile": "https://lacolaco.net",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
   "contributorsPerLine": 7
 }
