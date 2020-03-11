@@ -55,7 +55,7 @@
     "ts-node": "8.3.0",
     "tslint": "5.18.0",
     "typescript": "3.7.5",
-    "@commitlint/cli": "8.1.0",
+    "@commitlint/cli": "8.3.5",
     "@commitlint/config-angular": "8.3.4",
     "@commitlint/config-conventional": "8.3.4",
     "git-cz": "3.3.0",
