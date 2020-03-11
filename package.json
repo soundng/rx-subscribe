@@ -58,7 +58,7 @@
     "@commitlint/cli": "8.3.5",
     "@commitlint/config-angular": "8.3.4",
     "@commitlint/config-conventional": "8.3.4",
-    "git-cz": "3.3.0",
+    "git-cz": "4.3.1",
     "all-contributors-cli": "6.14.0",
     "lint-staged": "9.5.0",
     "prettier": "1.19.1",
