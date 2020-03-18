@@ -40,7 +40,7 @@ export class RxSubscribeDirective<T> implements OnChanges, OnDestroy {
       } else {
         this.viewRef.context.$implicit = value;
       }
-      this.viewRef.markForCheck();
+      this.viewRef.detectChanges();
     });
   }
 
