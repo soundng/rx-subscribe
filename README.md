@@ -1,3 +1,7 @@
+# I Recommend You To Use ngrxLet directive of @ngrx/component Instead of This.
+
+👉 https://ngrx.io/guide/component/let
+
 # rx-subscribe
 
 AsyncPipe alternative for handling Observable data safely.
