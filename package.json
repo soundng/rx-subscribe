@@ -63,7 +63,7 @@
     "lint-staged": "10.1.2",
     "prettier": "2.0.4",
     "standard-version": "7.1.0",
-    "husky": "4.2.3",
+    "husky": "4.2.5",
     "cross-env": "7.0.2",
     "@ngneat/spectator": "5.3.1"
   },
